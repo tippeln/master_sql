@@ -5,9 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SQL攻略 | すくすくのびるはじめのいっぽ</title>
-    <meta name="keywords" content="幼稚園、わくわく、楽しい、園庭が広い">
-    <meta name="description" content="行動する力を持った子ども">
+    <title>SQL攻略 | Web上でSQLを実行しながらマスターするサイト</title>
+    <meta name="keywords" content="SQL 情報処理試験">
+    <meta name="description" content="Web上から実習しながら学習ができる、SQL攻略へようこそ。
+当サイトはSQLを学習し始めたエンジニアや、情報処理技術者試験の受験者にお勧めです。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="" />
     <meta property="og:type" content="website" />
@@ -18,8 +19,6 @@
     <!-- <link rel="icon" href="favicon.ico"> -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/"> -->
     <link rel="stylesheet" href="css/bootstrap_min.css">
@@ -49,57 +48,62 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
-
-        <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">Menu</a>
-        <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbarContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav  mr-auto">
-                <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase nav-menu"><img src="images/logo_mini.png" alt="" width="20px"></a></li>
-                <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase nav-menu">About</a></li>
-                <!-- Megamenu-->
-                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase nav-menu">SQL</a>
-                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-                        <div class="container">
-                            <div class="row rounded-0 m-0">
-                                <div class="col-lg-7 col-xl-8">
-                                    <div class="p-4">
-                                        <div class="row">
-                                            <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase">SQL攻略</h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">はじめに</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">SQLの基本</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">SELECT文の基本（１）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">SELECT文の基本（２）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">ソート（ORDER BY）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">集合関数（SUM、MAX、MIN、AVG、COUNT）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">範囲で抽出（BETWEEN演算子）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">パターンマッチング（LIKE演算子）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">グループ化（GROUP BY）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">グループ化したテーブルの選択条件（HAVING）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">重複行の排除（DISTINCT）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">INSERT文</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">UPDATE文</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">DELETE文</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">複数表への問合せ</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">入れ子の問合せ</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase">正規化攻略</h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">重複行の排除（DISTINCT）</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">INSERT文</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">UPDATE文</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">DELETE文</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">複数表への問合せ</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 fg">入れ子の問合せ</a></li>
-                                                </ul>
-                                            </div>
-                                            <!--                                         <div class="col-lg-6 mb-4">
+    <main>
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none"></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav  mr-auto">
+                       <!--  <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase nav-menu"><img src="images/logo_mini.png" alt="" width="20px"></a></li> -->
+                        <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold text-uppercase nav-menu">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link font-weight-bold text-uppercase nav-menu">About</a></li>
+                        <!-- Megamenu-->
+                        <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase nav-menu">SQL</a>
+                            <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                <div class="container">
+                                    <div class="row rounded-0 m-0">
+                                        <div class="col-lg-7 col-xl-8">
+                                            <div class="p-4">
+                                                <div class="row">
+                                                    <div class="col-lg-6 mb-4">
+                                                        <h6 class="font-weight-bold text-uppercase">SQL攻略</h6>
+                                                        <p class="text-small">単に参考書を眺めているだけではなかなか理解しづらいSQLも、実行しながら学習すると簡単にマスターできます。当サイトのメインコンテンツです。</p>
+                                                        <ul class="list-unstyled">
+                                                            <li class="nav-item"><a href="sql01.html" class="nav-link text-small pb-0 fg">はじめに</a></li>
+                                                            <li class="nav-item"><a href="sql02.html" class="nav-link text-small pb-0 fg">SQLの基本</a></li>
+                                                            <li class="nav-item"><a href="sql03.html" class="nav-link text-small pb-0 fg">SELECT文の基本（１）</a></li>
+                                                            <li class="nav-item"><a href="sql04.html" class="nav-link text-small pb-0 fg">SELECT文の基本（２）</a></li>
+                                                            <li class="nav-item"><a href="sql05.html" class="nav-link text-small pb-0 fg">ソート（ORDER BY）</a></li>
+                                                            <li class="nav-item"><a href="sql06.html" class="nav-link text-small pb-0 fg">集合関数（SUM、MAX、MIN、AVG、COUNT）</a></li>
+                                                            <li class="nav-item"><a href="sql07.html" class="nav-link text-small pb-0 fg">範囲で抽出（BETWEEN演算子）</a></li>
+                                                            <li class="nav-item"><a href="sql08.html" class="nav-link text-small pb-0 fg">パターンマッチング（LIKE演算子）</a></li>
+                                                            <li class="nav-item"><a href="sql09.html" class="nav-link text-small pb-0 fg">グループ化（GROUP BY）</a></li>
+                                                            <li class="nav-item"><a href="sql10.html" class="nav-link text-small pb-0 fg">グループ化したテーブルの選択条件（HAVING）</a></li>
+                                                            <li class="nav-item"><a href="sql11.html" class="nav-link text-small pb-0 fg">重複行の排除（DISTINCT）</a></li>
+                                                            <li class="nav-item"><a href="sql12.html" class="nav-link text-small pb-0 fg">INSERT文</a></li>
+                                                            <li class="nav-item"><a href="sql13.html" class="nav-link text-small pb-0 fg">UPDATE文</a></li>
+                                                            <li class="nav-item"><a href="sql14.html" class="nav-link text-small pb-0 fg">DELETE文</a></li>
+                                                            <li class="nav-item"><a href="sql15.html" class="nav-link text-small pb-0 fg">複数表への問合せ</a></li>
+                                                            <li class="nav-item"><a href="sql16.html" class="nav-link text-small pb-0 fg">入れ子の問合せ</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-6 mb-4">
+                                                        <h6 class="font-weight-bold text-uppercase">正規化攻略</h6>
+                                                        <p class="text-small">基本情報やITパスポート試験の問題集ではわからなかった正規化理論も、ここで確実にマスターできる。頻繁に出題される分野なので、確実に抑えておきましょう。</p>
+                                                        <ul class="list-unstyled">
+                                                            <li class="nav-item"><a href="norm01.html" class="nav-link text-small pb-0 fg">重複行の排除（DISTINCT）</a></li>
+                                                            <li class="nav-item"><a href="norm02.html" class="nav-link text-small pb-0 fg">正規化を理解するための基礎</a></li>
+                                                            <li class="nav-item"><a href="norm03.html" class="nav-link text-small pb-0 fg">非正規形から第一正規形へ</a></li>
+                                                            <li class="nav-item"><a href="norm04.html" class="nav-link text-small pb-0 fg">第一正規形から第二正規形へ</a></li>
+                                                            <li class="nav-item"><a href="norm05.html" class="nav-link text-small pb-0 fg">第二正規形から第三正規形へ</a></li>
+                                                            <li class="nav-item"><a href="norm06.html" class="nav-link text-small pb-0 fg">過去問題を解きましょう</a></li>
+                                                            <li class="nav-item"><a href="norm07.html" class="nav-link text-small pb-0 fg">最後に（やや蛇足的ながらも）</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--                                         <div class="col-lg-6 mb-4">
                                                 <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
                                                 <ul class="list-unstyled">
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
@@ -117,47 +121,49 @@
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
                                                 </ul>
                                             </div> -->
+                                                </div>
+                                            </div>
                                         </div>
+                                        <!--               <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://res.cloudinary.com/mhmd/image/upload/v1556990826/mega_bmtcdb.png)no-repeat; background-size: cover;"></div>
+            </div> -->
                                     </div>
                                 </div>
-                                <!--               <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://res.cloudinary.com/mhmd/image/upload/v1556990826/mega_bmtcdb.png)no-repeat; background-size: cover;"></div>
-            </div> -->
                             </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
                         <!--                 <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">About</a></li>
                 <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Services</a></li>
                 <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Contact</a></li> -->
-
-                <li>
-                    <form class="form-inline my-2 my-md-0">
-                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                    </form>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="py-5 text-white">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p><h1 class="display-4"><img src="images/logo.png" alt="" width="250px" class="delayed-image"></h1></p>
-                    <!-- <p class="lead mb-0">Web上から実習しながら学習ができる、SQL攻略へようこそ。当サイトはＳＱＬを学習し始めたエンジニアや、情報処理技術者試験の受験者にお勧めです。 </p> -->
-                    <!-- <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class='text-white'><u>Bootstrapious</u></a>. </p> -->
+                        <li>
+                            <form class="form-inline my-2 my-md-0">
+                                <i class="fa fa-search" aria-hidden="true"></i>　<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <section class="py-5 text-white">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <br><br><p>
+                            <h1 class="display-4"><img src="images/logo.png" alt="" width="250px" class="delayed-image"></h1>
+                        </p>
+                        <!-- <p class="lead mb-0">Web上から実習しながら学習ができる、SQL攻略へようこそ。当サイトはＳＱＬを学習し始めたエンジニアや、情報処理技術者試験の受験者にお勧めです。 </p> -->
+                        <!-- <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class='text-white'><u>Bootstrapious</u></a>. </p> -->
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-lg-10 mx-auto text-center">
+                        <p class="lead delayed-image">Web上から実習しながら学習ができる、SQL攻略へようこそ。<br>当サイトはSQLを学習し始めたエンジニアや、情報処理技術者試験の受験者にお勧めです。 </p>
+                    </div>
                 </div>
             </div>
-            <div class="row pt-5">
-                <div class="col-lg-10 mx-auto text-center">
-                    <p class="lead delayed-image">Web上から実習しながら学習ができる、SQL攻略へようこそ。<br>当サイトはＳＱＬを学習し始めたエンジニアや、情報処理技術者試験の受験者にお勧めです。 </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <footer class="fixed-bottom  text-center">
+        </section>
+    </main>
+    <footer class="fixed-bottom  text-center">
         <p><small>Copyright &copy 2004-2019 SQL攻略 All Rights Reserved.</small></p>
     </footer>
 </body>
