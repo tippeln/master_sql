@@ -1,34 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese');
 
-
 /*
- * Base structure
- */
+------------------------------------------------------- */
+/* function
+------------------------------------------------------- */
+$main-color: #f25e86;
 
-html,
-body {
+$sub-color-b: #33556D;
+// $main-color-g: #228E41;
+$main-color-g: #428253;
+$sub-color-g: #1DA96F;
+$accent-color: #f8914d;
+$char-color: #333;
+$base-color: #fff;
 
-    height: 100%;
-    background-color: #333;
-    background-image: url("../images/back.jpg");
-    background-position: cover;
-    letter-spacing: 2px;
-    font-family: 'Noto Sans', sans-serif;
+
+$color_list: #E2EFF9,
+#78A6C6,
+#E2EFF9;
+
+.center {
+    text-align: center;
+    justify-content: center;
 }
 
-body {
-
-    color: #fff;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+.right {
+    text-align: right;
 }
 
-small {
-    letter-spacing: 2px;
+strong {
+    font-size: 1.1rem;
+}
+
+.w30 {
+    width: 30%;
+}
+
+// back-botton
+#page_top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+
+    z-index: 999;
+}
+
+#page_top a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: .1rem;
+    font-size: .9rem;
+    text-align: center;
+    color: #333;
+}
+
+#page_top a::before {
+    background-image: url("..images/back.png") no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.mkr_lime {
+    background: linear-gradient(transparent 60%, rgba(orange, .2) 60%);
 }
 
 .delayed-image {
-    animation: delayed 8s ease 0s 1 normal;
+    animation: delayed 3s ease 0s 1 normal;
 }
 
 @keyframes delayed {
@@ -41,10 +91,43 @@ small {
     }
 }
 
+/*
+------------------------------------------------------- */
+/* Base structure
+------------------------------------------------------- */
 
+html,
+body {
+
+    height: 100%;
+    background-color: #333;
+    background-image: url("../images/back.jpg");
+    background-position: cover;
+    background-repeat: repeat-y;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+
+    color: #fff;
+    // text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+small {
+    letter-spacing: 2px;
+}
+
+
+
+/*
+------------------------------------------------------- */
+/* nav
+------------------------------------------------------- */
 
 .navbar {
-  position: fixed;
+    position: fixed;
     width: 100%;
     padding: 10px;
     text-align: right;
@@ -52,8 +135,6 @@ small {
     border-radius: 0;
     z-index: 99;
 }
-
-
 
 .navbar-nav .nav-item .nav-menu {
     color: #fff;
@@ -65,7 +146,7 @@ small {
 }
 
 .text-small {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .lead {
@@ -81,7 +162,7 @@ small {
     background: none;
     border: none;
     width: 100%;
-    background-color: rgba(#fff, 0.9);
+    background-color: rgba(#fff, 0.98);
     border-radius: 0;
 }
 

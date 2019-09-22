@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/cover/ -->
 <html lang="ja">
 
 <head>
@@ -15,36 +14,14 @@
     <meta property="og:url" content="/" />
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="。" />
-    <!-- <link rel="icon" href="images/favicon.ico" type="icon"> -->
-    <!-- <link rel="icon" href="favicon.ico"> -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/"> -->
     <link rel="stylesheet" href="css/bootstrap_min.css">
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="./Cover Template · Bootstrap_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <script src="js/common.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!--     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style> -->
-    <!-- Custom styles for this template -->
 </head>
 
 <body>
@@ -57,7 +34,7 @@
                 </button>
                 <div id="navbarContent" class="collapse navbar-collapse">
                     <ul class="navbar-nav  mr-auto">
-                       <!--  <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase nav-menu"><img src="images/logo_mini.png" alt="" width="20px"></a></li> -->
+                        <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold text-uppercase nav-menu">Home</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link font-weight-bold text-uppercase nav-menu">About</a></li>
                         <!-- Megamenu-->
                         <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase nav-menu">SQL</a>
@@ -144,102 +121,148 @@
             </nav>
         </section>
         <section class="py-5 text-white">
-<div class="container py-4">
-    <a href="/">ホーム</a> >> ＳＱＬ攻略 - はじめに
-</div>
-<!-- ヘッダ用 -->
-<!-- メインコンテンツ -->
-<div class="container py-4">
-    <div class="row">
-        <div class="col-md-12"><h2 class="py-4">はじめに</h2></div>
-    </div>
-    <div class="row">
-        <div class="col-md-8">
-            <div class="shadow-sm alert alert-primary ">当サイトで利用しているデータベースや、実習で使用するテーブルについて解説します。</div>
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-6304702730679248"
-                 data-ad-slot="7056197552"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            <h3>１．ＳＱＬの規格について</h3>
-            <p class="py-4">当サイトのデータベースはMySQLを使用しており、情報処理技術者試験の出題範囲と同じくSQL-92に準拠しています。</p>
-            <h3>２．実習で使用するテーブルについて</h3>
-            <p >実習で使用するテーブルの構成は以下のようになっています。Oracleをインストールした際に出来るサンプルテーブルと同じ構成を採用しています。</p>
-            <h5 class="py-2">EMPテーブル</h5>
-            <table class="list table-hover">
-                <tr><th>カラム名</th><th>カラム説明</th><th>データ型</th></tr>
-                <tr><td>EMPNO</td><td>従業員番号</td><td>数値型</td></tr>
-                <tr><td>ENAME</td><td>従業員名</td><td>文字列型</td></tr>
-                <tr><td>JOB</td><td>仕事</td><td>文字列型</td></tr>
-                <tr><td>MGR</td><td>マネージャー</td><td>数値型</td></tr>
-                <tr><td>HIREDATE</td><td>採用日付</td><td>日付型</td></tr>
-                <tr><td>SAL</td><td>給料</td><td>数値型</td></tr>
-                <tr><td>COMM</td><td>歩合給</td><td>数値型</td></tr>
-                <tr><td>DEPTNO</td><td>部署番号</td><td>数値型</td></tr>
-            </table>
-            <br>
-            <h5 class="py-2">DEPTテーブル</h5>
-            <table class="list table-hover">
-                <tr><th>カラム名</th><th>カラム説明</th><th>データ型</th></tr>
-                <tr><td>DEPTNO</td><td>部署番号</td><td>数値型</td></tr>
-                <tr><td>DNAME</td><td>部署名</td><td>文字列型</td></tr>
-                <tr><td>LOC</td><td>所在地</td><td>文字列型</td></tr>
-            </table>
-            <br>
-            <br>
-            <h3 >３．ＳＱＬの実行の仕方</h3>
-            <p class="py-4">当サイトではＷｅｂ上でＳＱＬを実行することができます。各ページの実習問題を解き学習したＳＱＬを実際に実行することで理解を深め、記憶に定着させることを狙っています。以下の実習問題にしたがってＳＱＬを実行してみてください。</p>
-            <!-- 実習ここから -->
-            <div class="shadow-sm alert alert-primary">
-            <div class="text-primary">実習問題</div>
-            <p class="py-2">実行ボタンをクリックしてみてください。テキスト入力エリアのSQL（SELECT * FROM EMP）が実行され、その下に実行結果が表示されます。</p>
+            <div class="container py-4">
+                <a href="/">ホーム</a> >> ＳＱＬ攻略 - はじめに
             </div>
-            <div>
-            <form method="POST" action="view.php" target="view1">
-            <button class="btn btn-primary text-white" accesskey="e">実行 (E)</button>
-            <textarea  cols="100" name="txtsql" style="width:100%;height:100pt;font-size:10pt;background-color:#eee">SELECT * FROM EMP</textarea>
-            <iframe name="view1" style="width:100%;height:100pt;border:0;" src="view.php"></iframe>
-            </form>
+            <!-- ヘッダ用 -->
+            <!-- メインコンテンツ -->
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="py-4">はじめに</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="shadow-sm alert alert-primary ">当サイトで利用しているデータベースや、実習で使用するテーブルについて解説します。</div>
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6304702730679248" data-ad-slot="7056197552" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <h3>１．ＳＱＬの規格について</h3>
+                        <p class="py-4">当サイトのデータベースはMySQLを使用しており、情報処理技術者試験の出題範囲と同じくSQL-92に準拠しています。</p>
+                        <h3>２．実習で使用するテーブルについて</h3>
+                        <p>実習で使用するテーブルの構成は以下のようになっています。Oracleをインストールした際に出来るサンプルテーブルと同じ構成を採用しています。</p>
+                        <h5 class="py-2">EMPテーブル</h5>
+                        <table class="list table-hover">
+                            <tr>
+                                <th>カラム名</th>
+                                <th>カラム説明</th>
+                                <th>データ型</th>
+                            </tr>
+                            <tr>
+                                <td>EMPNO</td>
+                                <td>従業員番号</td>
+                                <td>数値型</td>
+                            </tr>
+                            <tr>
+                                <td>ENAME</td>
+                                <td>従業員名</td>
+                                <td>文字列型</td>
+                            </tr>
+                            <tr>
+                                <td>JOB</td>
+                                <td>仕事</td>
+                                <td>文字列型</td>
+                            </tr>
+                            <tr>
+                                <td>MGR</td>
+                                <td>マネージャー</td>
+                                <td>数値型</td>
+                            </tr>
+                            <tr>
+                                <td>HIREDATE</td>
+                                <td>採用日付</td>
+                                <td>日付型</td>
+                            </tr>
+                            <tr>
+                                <td>SAL</td>
+                                <td>給料</td>
+                                <td>数値型</td>
+                            </tr>
+                            <tr>
+                                <td>COMM</td>
+                                <td>歩合給</td>
+                                <td>数値型</td>
+                            </tr>
+                            <tr>
+                                <td>DEPTNO</td>
+                                <td>部署番号</td>
+                                <td>数値型</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <h5 class="py-2">DEPTテーブル</h5>
+                        <table class="list table-hover">
+                            <tr>
+                                <th>カラム名</th>
+                                <th>カラム説明</th>
+                                <th>データ型</th>
+                            </tr>
+                            <tr>
+                                <td>DEPTNO</td>
+                                <td>部署番号</td>
+                                <td>数値型</td>
+                            </tr>
+                            <tr>
+                                <td>DNAME</td>
+                                <td>部署名</td>
+                                <td>文字列型</td>
+                            </tr>
+                            <tr>
+                                <td>LOC</td>
+                                <td>所在地</td>
+                                <td>文字列型</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+                        <h3>３．ＳＱＬの実行の仕方</h3>
+                        <p class="py-4">当サイトではＷｅｂ上でＳＱＬを実行することができます。各ページの実習問題を解き学習したＳＱＬを実際に実行することで理解を深め、記憶に定着させることを狙っています。以下の実習問題にしたがってＳＱＬを実行してみてください。</p>
+                        <!-- 実習ここから -->
+                        <div class="shadow-sm alert alert-primary">
+                            <div class="text-primary">実習問題</div>
+                            <p class="py-2">実行ボタンをクリックしてみてください。テキスト入力エリアのSQL（SELECT * FROM EMP）が実行され、その下に実行結果が表示されます。</p>
+                        </div>
+                        <div>
+                            <form method="POST" action="view.php" target="view1">
+                                <button class="btn btn-primary text-white" accesskey="e">実行 (E)</button>
+                                <textarea cols="100" name="txtsql" style="width:100%;height:100pt;font-size:10pt;background-color:#eee">SELECT * FROM EMP</textarea>
+                                <iframe name="view1" style="width:100%;height:100pt;border:0;" src="view.php"></iframe>
+                            </form>
+                        </div>
+                        <!-- 実習ここまで -->
+                        <p>うまく表示されましたか？これで はじめに は終了です。</p>
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6304702730679248" data-ad-slot="7056197552" data-ad-format="rectangle"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- ハーフページ -->
+                        <script type="text/javascript">
+                        <!--
+                        google_ad_client = "pub-6304702730679248";
+                        google_alternate_color = "FFFFFF";
+                        google_ad_width = 300;
+                        google_ad_height = 600;
+                        google_ad_format = "300x600_as";
+                        google_ad_type = "text_image";
+                        google_ad_channel = "";
+                        google_color_border = "FFFFFF";
+                        google_color_bg = "FFFFFF";
+                        google_color_link = "FF6600";
+                        google_color_url = "0066FF";
+                        google_color_text = "000000";
+                        //-->
+                        </script>
+                        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                        </script>
+                    </div>
+                </div>
             </div>
-            <!-- 実習ここまで -->
-            <p>うまく表示されましたか？これで はじめに は終了です。</p>
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-6304702730679248"
-                 data-ad-slot="7056197552"
-                 data-ad-format="rectangle"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-        <div class="col-md-4">
-            <!-- ハーフページ -->
-            <script type="text/javascript"><!--
-            google_ad_client = "pub-6304702730679248";
-            google_alternate_color = "FFFFFF";
-            google_ad_width = 300;
-            google_ad_height = 600;
-            google_ad_format = "300x600_as";
-            google_ad_type = "text_image";
-            google_ad_channel ="";
-            google_color_border = "FFFFFF";
-            google_color_bg = "FFFFFF";
-            google_color_link = "FF6600";
-            google_color_url = "0066FF";
-            google_color_text = "000000";
-            //--></script>
-            <script type="text/javascript"
-              src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
-        </div>
-    </div>
-</div>
         </section>
     </main>
     <footer class="fixed-bottom  text-center">
